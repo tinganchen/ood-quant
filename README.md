@@ -1,5 +1,5 @@
 # Leaving Footprints for Online Out-of-Distribution Detection by Leveraging Low-Bit Representations
-(@NVIDIA Research Team, 2023)
+(@NVIDIA Research Team)
 
 
 ## Requirements
