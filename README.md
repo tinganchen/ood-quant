@@ -11,20 +11,12 @@
 * tensorboardx==1.4
 
 ## Introduction
-Out-of-distribution (OOD) detection is developed to identify the inference data with a similar -or- distinct distribution from training data, i.e., in-distribution (ID) -or- out-of-distribution (OOD) data, to prevent the OOD data from generating a distorted prediction result and thus deteriorating the model performance. 
+Out-of-distribution (OOD) detection is developed to identify the inference data with a similar -or distinct distribution from training data, i.e., in-distribution (ID) -or- out-of-distribution (OOD) data, to prevent the OOD data from generating a distorted prediction result and thus deteriorating the model performance. 
 
 ## Motivations
-Existing works utilized pruning or
-outlier removal to retain more essential prediction information of ID data than OOD data for identification. However,
-they focus on the structures, e.g., columns of activation matrices, or long-tailed values, without examining the overall
-distribution. In this project, we design a novel algorithm, Leaf, to employ quantization to preserve ID distribution with low-bit representations, whereas OOD features under the same quantization criterion tend to suffer from more distortions, e.g., fewer representations or more information
-collision. Accordingly, two groups are more easily to be
-distinguished. Moreover, existing research detects images
-individually and independently during inference. By contrast, we propose a new mindset, online OOD detection, to
-store the detection results of previous data as footprints for
-the subsequent detection. Based on the prior knowledge, we
-estimate the ID and OOD testing distributions to separate
-the two groups further apart to effectively enhance of the detection results.
+Existing works utilized pruning or outlier removal to retain more essential prediction information of ID data than OOD data for identification. However, they focus on the structures, e.g., columns of activation matrices, or long-tailed values, without examining the overall distribution. In this project, we design a novel algorithm, Leaf, to employ quantization to preserve ID distribution with low-bit representations, whereas OOD features under the same quantization criterion tend to suffer from more distortions, e.g., fewer representations or more information collision. Accordingly, two groups are more easily to be distinguished. 
+
+Moreover, existing research detects images individually and independently during inference. By contrast, we propose a new mindset, online OOD detection, to store the detection results of previous data as footprints for the subsequent detection. Based on the prior knowledge, we estimate the ID and OOD testing distributions to separate the two groups further apart to effectively enhance of the detection results.
 
 
 ## Overview
