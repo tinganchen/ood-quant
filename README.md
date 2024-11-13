@@ -52,9 +52,4 @@ See ["fig/performance_plot.pdf"](fig/performance_plot.pdf).
 
 ## Paper Reference
 
-* [\[1\]](https://arxiv.org/abs/1610.02136)
-* [\[2\]](https://proceedings.neurips.cc/paper/2020/hash/f5496252609c43eb8a3d147ab9b9c006-Abstract.html)
-* [\[3\]](https://openreview.net/forum?id=H1VGkIxRZ)
-* [\[4\]](https://proceedings.neurips.cc/paper/2021/hash/01894d6f048493d2cacde3c579c315a3-Abstract.html)
-* [\[5\]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136840680.pdf)
-* [\[6\]](https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_ViM_Out-of-Distribution_With_Virtual-Logit_Matching_CVPR_2022_paper.pdf)
+[\[1\]](https://arxiv.org/abs/1610.02136), [\[2\]](https://proceedings.neurips.cc/paper/2020/hash/f5496252609c43eb8a3d147ab9b9c006-Abstract.html), [\[3\]](https://openreview.net/forum?id=H1VGkIxRZ), [\[4\]](https://proceedings.neurips.cc/paper/2021/hash/01894d6f048493d2cacde3c579c315a3-Abstract.html), [\[5\]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136840680.pdf), [\[6\]](https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_ViM_Out-of-Distribution_With_Virtual-Logit_Matching_CVPR_2022_paper.pdf)
