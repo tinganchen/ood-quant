@@ -32,36 +32,25 @@ the two groups further apart to effectively enhance of the detection results.
 Overview of online OOD detection using low-bit features (see ["fig/overview.pdf"](fig/motivation.pdf))
 
 
-## Experiments
+## Implementation (eg. ResNet-50 on ImageNet-1K [ID] and iNaturalist [OOD] datasets)
 
-Task                | LLM Models               | Evaluation Metric   | Datasets  
----                  |---                  |---                                    |---                    
-Text Generation |GPT-2 (124M) & OPT (1.3B, 2.7B, 6.7B) & LLaMA (7B, 13B, 30B, 65B)           | Perplexity                                    | WikiText-2 & PTB & C4           
-Other Tasks (eg. Question Answering)  |GPT-2 (124M) & OPT (1.3B, 2.7B, 6.7B) & LLaMA (7B, 13B, 30B, 65B)           | Perplexity / Accuracy (%)                                   | [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness)
-
-
-## Implementation
-
-### Task - Text Generation (eg. LLaMA-13B)
-
-#### Search and Bit Allocation
+#### Training low-bit models
 
 ```shell
-cd text_generation/
-bash search.sh
+cd oodq_cnn/resnet-50-imagenet/
+bash run_train.sh
 ```
 
-#### Inference of Mixed-precision LLM Models
+#### Evaluation (FPR95 and AUROC)
 
 ```shell
-cd text_generation/
-bash run.sh
+bash run_eval.sh
 ```
 ## Results
 
 See ["fig/performance_plot.pdf"](fig/performance_plot.pdf).
 
-## Reference
+## Paper Reference
 
 * [\[1\]](https://arxiv.org/abs/1610.02136)
 * [\[2\]](https://proceedings.neurips.cc/paper/2020/hash/f5496252609c43eb8a3d147ab9b9c006-Abstract.html)
